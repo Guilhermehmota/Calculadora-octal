@@ -10,6 +10,10 @@ export const CalculatorContainer = styled.div`
 `
 export const Screen = styled.div`
 height: 50px;
+text-align: right;
+padding: 10px;
+font-size: 24px;
+
 `
 
 export const DivButtons = styled.div`
