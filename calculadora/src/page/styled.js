@@ -54,3 +54,7 @@ export const ResultButton = styled.button`
 width: 100%;
 height: 50%;
 `
+export const ClearButton = styled.button`
+width: 100%;
+height: 10%;
+`
