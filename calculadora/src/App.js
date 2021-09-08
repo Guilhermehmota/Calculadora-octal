@@ -1,13 +1,15 @@
 import React from "react";
 import './App.css';
 import "./index.css"
+import Calculator from "./page/Calculator";
+import { MainContainer } from "./styled";
 
 
 const App = () => {
   return (
-    <div>
-      Calculadora 
-    </div>
+    <MainContainer>
+      <Calculator/>
+    </MainContainer>
   )
 }
 
