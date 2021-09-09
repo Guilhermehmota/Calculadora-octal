@@ -8,7 +8,7 @@ const finalResult = (operation) => {
         return signal !== ''
         //tirar os espaços que estavam no início e no final
     })
-
+    
     //map para converter cada um dos numeros octais em decimais
     const decimals = octals.map((octal) => {
         return parseInt(octal, 8)
@@ -33,7 +33,7 @@ const finalResult = (operation) => {
             default: break
         }
     })
-    
+
     // por fim realizo a conversão para octal
     const octalResult = decimalResult.toString(8)
     return octalResult
