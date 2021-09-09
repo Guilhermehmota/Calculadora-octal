@@ -2,13 +2,9 @@
 const finalResult = (operation) => {
 
     const splittedNumbers = /[\+\-\*\/]/
-
     const octals = operation.split(splittedNumbers)
-
     const splittedSignals = /[\d]/
-
-    const signals = operation.split(splittedSignals)
-    
+    const signals = operation.split(splittedSignals)    
     const correctedSignals = signals.filter(signal => {
         return signal !== ''
         //tirar os espaços que estavam no início e no final

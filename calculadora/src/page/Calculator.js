@@ -1,4 +1,7 @@
-import { DivButtons, CalculatorContainer, Operators, Screen, FirstLine, SecondLine, NumberButton, OperatorButton, Result, ResultButton, ClearButton, ConvertAndClear, ConvertButtons, NumberButtons, Button, SendResult } from "./styled";
+import { 
+    DivButtons, CalculatorContainer, Operators, Screen, FirstLine, SecondLine, NumberButton, 
+    OperatorButton, Result, ResultButton, ClearButton, ConvertAndClear, ConvertButtons, SendResult 
+} from "./styled";
 import { useState } from "react";
 import finalResult from "../functions/finalResult";
 import sendResult from "../functions/sendResult";
@@ -6,7 +9,6 @@ import sendResult from "../functions/sendResult";
 const Calculator = () => {
 
     const [operation, setOperation] = useState("")
-
     const [result, setResult] = useState("")
 
     const simbols = ['+', '-', '/', '*']
@@ -28,6 +30,7 @@ const Calculator = () => {
     const calculateFinalResult = () => {
         setOperation(finalResult(operation))
     }
+
     const toDec = () => {
         const octal = finalResult(operation)
         const dec = parseInt(octal, 8)
@@ -40,7 +43,7 @@ const Calculator = () => {
         const bin = dec.toString(2)
         alert(`Este restultado em decimal é ${bin}`)
     }
-
+    
     const clear = () => {
         setOperation('')
     }
