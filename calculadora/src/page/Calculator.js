@@ -20,6 +20,9 @@ const Calculator = () => {
         ) {
             return;
         }
+        if (operation === "0" && value === "0" || value === "1") {
+            return;
+        }
         setOperation(operation + value)
 
         if (!simbols.includes(value)) {
@@ -50,7 +53,6 @@ const Calculator = () => {
 
     return (
         <CalculatorContainer>
-
             <Screen>
                 {operation || "0"}
             </Screen>
@@ -83,7 +85,6 @@ const Calculator = () => {
                 <ResultButton onClick={calculateFinalResult}>=</ResultButton>
                 <SendResult onClick={() => sendResult(operation)}>enviar resultado</SendResult>
             </Result> 
-
         </CalculatorContainer>
     )
 }

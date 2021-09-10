@@ -2,6 +2,10 @@
 
 Aplicação desenvolvida em React na qual o objetivo era criar uma calculadora que permite realizar operações no sistema octal, um sistema de operação cuja base é 8 e utiliza símbolos de 0 a 7 para representação de quantidade. 
 
+## Link do Surge
+
+https://calculadora-octal-guilherme.surge.sh/
+
 ## Funcionalidades
 
 A calculadora tem o sistema octal como padrão e realiza os cálculos de adição, subtração, multiplicação e divisão. Além de realizar contas, ela possibilita que o resultado final seja enviado ao WhatsApp do usuário.  
@@ -42,9 +46,9 @@ Execute a aplicação:
 
     npm start
 
+
 ## Ferramentas utilizadas 🔧
 
 - React Js - Biblioteca Javascript para construir interfaces;
 - Axios - Biblioteca para fazer requisições do navegador;
 - Styled-components - Bibilioteca que permite a utilização de CSS para estilização de componentes React;
-
