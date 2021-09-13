@@ -20,9 +20,7 @@ const Calculator = () => {
         ) {
             return;
         }
-        if (operation === "0" && value === "0" || value === "1") {
-            return;
-        }
+        
         setOperation(operation + value)
 
         if (!simbols.includes(value)) {
